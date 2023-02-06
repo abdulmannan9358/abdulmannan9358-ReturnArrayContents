@@ -1,3 +1,4 @@
+import java.lang.String;
 public class ReturnArrayContents {
     /**
      * Return a string with an array's contents, formatted with spaces.
@@ -27,7 +28,14 @@ public class ReturnArrayContents {
      * @param nums the array to be manipulated.
      * @return a string representation of all values of nums, with the values separated by spaces.
      */
+    String str="", str1;
     public String arrayToString(int[] nums){
-        return "";
+        
+        for (int i = 0 ; i < nums.length ; i ++){
+            str1 = nums[i] + " ";
+            str=str.concat(str1);
+            }
+            
+        return str;
     }
 }
